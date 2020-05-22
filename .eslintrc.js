@@ -16,9 +16,6 @@ module.exports = {
   rules: {
     'no-console': 0,
     quotes: [2, 'single'], //引号类型 single double
-    'object-curly-newline': [
-      'error',
-      { ObjectExpression: 'never', ObjectPattern: 'never' },
-    ],
+    'object-curly-newline': ['error', { multiline: true }],
   },
 };
