@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon --inspect=9229 app.js --exec babel-node",
+    "pm2": "pm2 start ecosystem.config.js --interpreter babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

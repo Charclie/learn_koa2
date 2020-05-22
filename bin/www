@@ -1,0 +1,5 @@
+require('babel-register');
+require('babel-polyfill');
+require('../app.js'); // 设置对应位置
+
+// pm2 多进程启动支持 ES Module语法
