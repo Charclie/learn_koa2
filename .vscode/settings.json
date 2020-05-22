@@ -5,5 +5,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  // 尾随逗号
+  "prettier.trailingComma": "all"
 }
