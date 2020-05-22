@@ -33,12 +33,6 @@ const app = new Koa();
 //   console.log(`Time: ${ms}ms`);
 // });
 
-// 解析post请求
-app.use(bodyParser());
-
-// 静态文件中间件
-app.use(home);
-
 // 日志中间件
 app.use(
   KoaLogger({
@@ -47,6 +41,12 @@ app.use(
     },
   }),
 );
+
+// 解析post请求
+app.use(bodyParser());
+
+// 静态文件中间件
+app.use(home);
 
 // add router middleware
 app.use(router.routes());
