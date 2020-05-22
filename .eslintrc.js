@@ -4,19 +4,21 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    "airbnb-base",
-  ],
+  extends: ['airbnb-base'],
   globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
   parserOptions: {
     ecmaVersion: 11,
-    sourceType: "module",
+    sourceType: 'module',
   },
   rules: {
-    "no-console": 0,
-    "quotes": [2, "single"], //引号类型 single double
+    'no-console': 0,
+    quotes: [2, 'single'], //引号类型 single double
+    'object-curly-newline': [
+      'error',
+      { ObjectExpression: 'never', ObjectPattern: 'never' },
+    ],
   },
 };
