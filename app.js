@@ -1,9 +1,9 @@
-import Koa from "koa";
-import bodyParser from "koa-bodyparser";
-import path from "path";
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
+import path from 'path';
 // 静态资源访问
-import serve from "koa-static";
-import router from "./routes/index";
+import serve from 'koa-static';
+import router from './routes/index';
 
 // 1.主页静态网页 把静态页统一放到public中管理
 // __dirname 当前执行文件绝对路径
@@ -38,4 +38,4 @@ app.use(home);
 app.use(router.routes());
 
 app.listen(8080);
-console.log("app started at port 8080...");
+console.log('app started at port 8080...');
